@@ -40,8 +40,9 @@ nav {
     color: #000;
     font-size: 1.7em;
     letter-spacing: 0.04em;
-    padding: 1.0em 1.0em 0.5em;
-    margin: 1.0em 0 ;
+    padding: 1.0em .50em 0.5em;
+    margin: .5em 0 ;
+
 }
 nav ul {
     margin: 0;
@@ -105,6 +106,42 @@ section#sidebar {
     border-top: #af22c2 solid 5px;
 }
 /* Main Section */
+section #main {
+    background-color: rbga(252,251,243,0.7);
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em,
+    box-shadow: 1px 1px 5px #777; /*offset-x | offset-y | blur radius | color */
+}
+
+section h1 {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 1.5em;
+    -webkit-text-stroke: 2px black;
+	-webkit-text-fill-color: rgb(149, 201, 231);
+    text-shadow: 1px 1px 4px black;
+}
+
+section div.panel {
+    float: left;
+    position: relative;
+    width: 250px;
+    margin: .5em 2em 2.0em 2em;
+    padding: 1.0em;
+    background-color: #fff;
+    border: #ccc solid 1px;
+    border-radius: 0.6em;
+}
+section div.panel img.donutType {
+    width: 100%;
+    height: 100%;
+}
+
+section div.panel h2 {
+    font-weight: bold;
+}
 /* Footer */
 footer {
     background-color: #40362f;
@@ -142,12 +179,12 @@ div.clear {
     font-size: 1%;
 }
 button {
-    color: #C64322;
+    color: #6693d6;
     background-color: #FFF;
     display: inline-block;
     margin: 0 0.75em 0 0;
     padding: 0.2em 0.5em;
-    border: 1px solid #C64322;
+    border: 1px solid #6693d6;
     text-transform: uppercase;
 }
 button:hover {
